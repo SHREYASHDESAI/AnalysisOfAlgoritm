@@ -1,0 +1,28 @@
+package AnalysisOfAlgorithmBackground;
+
+import java.util.Scanner;
+
+public class SumOfnNum {
+    public int sum(int n){
+        int sum = 0;
+        int i;
+        for(i=1;i<=n;i++){
+            sum = sum + i;
+        }
+        return sum;
+    }
+    public static void main(){
+
+        System.out.println("Enter Value of n:");
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+
+        SumOfnNum a = new SumOfnNum();
+        int b = a.sum(n);
+        System.out.println("Sum of n Numbers = " + b);
+    }
+}
+
+
+
+
